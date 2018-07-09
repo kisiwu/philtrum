@@ -1,8 +1,13 @@
 {
   "name": "philtrum",
+  "private": false,
   "version": "1.0.0",
   "description": "CLI: Uses handlebars to generate a html file",
   "main": "bin/philtrum.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kisiwu/philtrum.git"
+  },
   "scripts": {
     "test": "node bin/philtrum.js tests/template.html -i tests/input.js -o tests/output.html --helpers tests/helpers.js --open",
     "testpug": "node bin/philtrum.js tests/template.pug --engine pug -i tests/input.js -o tests/output2.html --helpers tests/helpers.js --open"
